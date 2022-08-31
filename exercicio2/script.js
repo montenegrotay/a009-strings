@@ -15,14 +15,23 @@
 
 const minhaString = "Eu não sou supersticioso, mas sou um pouco ________.      ";
 
-const novaString = minhaString.trim()
 
-console.log(minhaString)
+console.log(minhaString.trim())
 console.log(minhaString.length)
 
 
-
-console.log("Eu não sou supersticioso, mas sou um pouco sticioso.")
+const novaString = minhaString.replace(" ________.      ", "sticioso")
+console.log(novaString)
 console.log(novaString.length)
+
+
+
+
+
+
+
+
+
+
 
 

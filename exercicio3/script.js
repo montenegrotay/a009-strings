@@ -15,11 +15,11 @@
 
 
 const frase = `Jorge tem uma casa verde e com portão azul, com os dizeres: "BOAS VINDAS, mas não deixe o gato sair.`
-console.log(frase)
+console.log(`Analise a frase: \n`+frase)
+
 
 const primeiraAlteracao = frase.replaceAll("verde", "rosa").replaceAll("azul", "laranja")
-console.log(primeiraAlteracao)
-
+console.log(`Veja a substituíção: \n`+primeiraAlteracao)
 
 
 
@@ -30,7 +30,14 @@ const citacao = "mas não deixa o gato sair."
 
 const fraseMaiuscula = citacao.toUpperCase()
 
-console.log(segundaAlteracao, fraseMaiuscula)
+console.log(`Finalização: \n` + segundaAlteracao, fraseMaiuscula)
+
+
+const verde = segundaAlteracao.includes("verde") //false
+const laranja = segundaAlteracao.includes("laranja") //true
+
+console.log("A nova string inclui verde? "+segundaAlteracao.includes("verde"))
+console.log("A nova string inclui laranja? "+segundaAlteracao.includes("laranja"))
 
 
 
